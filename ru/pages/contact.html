@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фото арт - Связаться с нами</title>
+    <link rel = "icon" href = "../../assets/images/icon.png" type = "image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/css/contact.css">
+    <link rel="stylesheet" href="../../assets/css/links.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("../../assets/php/ru_navbar.html");
+    });
+    </script>
+    
+    <div class="drop"></div>  
+
+    <div class="container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <form action="../../assets/php/ru_mail.php" method="post" dir="ltr">
+            <h2>Связаться с нами</h2>
+            <label for="name">Имя:</label>
+            <input type="text" name="name" id="name" class="field" placeholder="Имя" required>
+    
+            <label for="email">Электронная почта (email):</label>
+            <input type="email" name="email" id="email" class="field" placeholder="email" required>
+    
+            <label for="phone">Номер телефона:</label>
+            <input type="text" name="phone" id="phone" class="field" placeholder="Номер телефона" required>
+    
+            <label for="message">Дополнительная информация:</label>
+            <textarea name="message" rows="4" class="field" placeholder="Как мы можем вам помочь"></textarea>
+    
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="links-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#links-placeholder").load("../../assets/php/links.html");
+    });
+    </script>
+</body>
+
+<div id="footer-placeholder">
+</div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("../../assets/php/footer.html");
+});
+</script>
+
+</html>

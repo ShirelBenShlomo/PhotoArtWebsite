@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פוטו ארט - צור קשר</title>
+    <link rel = "icon" href = "../../assets/images/icon.png" type = "image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/css/contact.css">
+    <link rel="stylesheet" href="../../assets/css/links.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/he_footer.css">
+</head>
+<body>
+    <div id="nav-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("../../assets/php/navbar.html");
+    });
+    </script>
+    
+    <div class="drop"></div>
+    
+    <div class="container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <form action="../../assets/php/he_mail.php" method="post">
+            <h2>צור קשר</h2>
+            <label for="name">שם:</label>
+            <input type="text" name="name" id="name" class="field" placeholder="שם" required>
+    
+            <label for="email">אימייל:</label>
+            <input type="email" name="email" id="email" class="field" placeholder="אימייל" required>
+    
+            <label for="phone">טלפון:</label>
+            <input type="text" name="phone" id="phone" class="field" placeholder="מספר טלפון" required>
+    
+            <label for="message">עוד מידע:</label>
+            <textarea name="message" rows="4" class="field" placeholder="איך נוכל לעזור לך"></textarea>
+    
+            <button type="submit" class="btn">שלח</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div id="links-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#links-placeholder").load("../../assets/php/links.html");
+    });
+    </script>
+</body>
+
+<div id="footer-placeholder" dir="rtl">
+</div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("../../assets/php/he_footer.html");
+});
+</script>
+
+
+</html>

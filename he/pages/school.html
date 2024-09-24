@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פוטו ארט - בית הספר</title>
+    <link rel = "icon" href = "../../assets/images/icon.png" type = "image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/css/school.css">
+    <link rel="stylesheet" href="../../assets/css/links.css">
+    <link rel="stylesheet" href="../../assets/css/he_footer.css">
+</head>
+<body>
+    <div id="nav-placeholder">
+    </div>
+    <div class="drop"></div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("../../assets/php/navbar.html");
+    });
+    </script>
+
+<section class="hero">
+  <div class="hero_container">
+    <h1>בית הספר לצילום</h1>
+    <p>
+      אני מזמין את כולם – בין אם אתם צלמים חובבנים או צלמים מקצועיים! <br>
+שיעורים - פרטניים ובקבוצות. אנו לומדים לשלוט במצלמה ובאור, מחדדים את כישורינו ויוצרים יצירות מופת משלנו. <br>
+אני מפתח תכנית בהתאם לרמה ורצונות התלמידים. <br>
+אני שמח לחלוק את הידע והניסיון שלי. <br>
+אנחנו עובדים ביחד בסטודיו וגם כן מחוצה לו. <br><br>
+בואו לצלול יחד איתנו לעולם הצילום המיוחד!!! <br>
+
+    </p>
+    
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 8</div>
+      <img src="../../assets/school/ph1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 8</div>
+      <img src="../../assets/school/ph2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 8</div>
+      <img src="../../assets/school/ph3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 8</div>
+      <img src="../../assets/school/ph4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 8</div>
+      <img src="../../assets/school/ph5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 8</div>
+      <img src="../../assets/school/ph6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 8</div>
+      <img src="../../assets/school/ph7.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 8</div>
+      <img src="../../assets/school/ph8.jpg" style="width:100%">
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  
+</section>
+
+<section class="features" dir="rtl">
+  <div class="container">
+    <h2  dir="rtl">למה לבחור בנו?</h2>
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <h3>מדריכים מומחים</h3>
+      <p>
+        המדריכים שלנו הם צלמים מנוסים שנלהבים לעזור לאחרים לשפר את כישוריהם
+      </p>
+    </div>
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-camera-retro"></i>
+      </div>
+      <h3>למידה מעשית</h3>
+      <p>
+        השיעורים שלנו נועדו לתת לך המון הזדמנויות להתנסות בצילום, לתרגל את הכישורים שלך ולקבל משוב מהמדריכים.
+      </p>
+    </div>
+    <div class="feature-box">
+      <div class="feature-icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <h3>קהילה</h3>
+      <p>
+        הצטרף לקהילה של צלמים נלהבים שחולקים את אהבתם לאומנות הצילום.
+      </p>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>  
+  </div>
+
+  <div id="links-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#links-placeholder").load("../../assets/php/links.html");
+  });
+  </script>
+</section>
+</body>
+
+<div id="footer-placeholder" dir="rtl">
+</div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("../../assets/php/he_footer.html");
+});
+</script>
+
+</html>

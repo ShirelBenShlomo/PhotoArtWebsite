@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фото арт - Школа</title>
+    <link rel = "icon" href = "../../assets/images/icon.png" type = "image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <link rel="stylesheet" href="../../assets/css/school.css">
+    <link rel="stylesheet" href="../../assets/css/links.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-........................." crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-........................." crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav-placeholder">
+    </div>
+    <div class="drop"></div>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("../../assets/php/ru_navbar.html");
+    });
+    </script>
+
+    <section class="hero">
+      <div class="hero_container">
+        <h1>ШКОЛА ФОТОГРАФИИ</h1>
+        <p>
+          Приглашаю всех желающих - от фотолюбителей до продвинутых фотографов!
+Уроки - индивидуальные и в группах. Учимся управлять фотокамерой и светом, оттачиваем мастерство и создаем собственные шедевры. 
+Разрабатываю программу в зависимости от уровня и пожеланий учеников.
+С удовольствием делюсь опытом.
+Вместе работаем в студии, путешествуем.
+Вместе погружаемся в особый мир фотографии!!!
+        </p>
+        
+      </div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="../../assets/school/ph1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 8</div>
+          <img src="../../assets/school/ph2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 8</div>
+          <img src="../../assets/school/ph3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 8</div>
+          <img src="../../assets/school/ph4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 8</div>
+          <img src="../../assets/school/ph5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 8</div>
+          <img src="../../assets/school/ph6.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 8</div>
+          <img src="../../assets/school/ph7.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 8</div>
+          <img src="../../assets/school/ph8.jpg" style="width:100%">
+        </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+
+      
+    </section>
+
+    <section class="features">
+       
+      <div class="container">
+        <h2 dir="rtl">Почему выбрать нас?</h2>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Инструкторы эксперты</h3>
+          <p>
+            Наши инструкторы — опытные фотографы, которые увлечены тем, что помогают другим улучшать свои навыки.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fas fa-camera-retro"></i>
+          </div>
+          <h3>Практическое обучение</h3>
+          <p>
+            Наши курсы предназначены для того, чтобы дать вам множество возможностей попрактиковаться в своих навыках и получить отзывы от ваших инструкторов.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Сообщество</h3>
+          <p>
+            Присоединяйтесь к сообществу увлеченных фотографов, которые разделяют вашу любовь к искусству фотографии.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+          <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+          <div id="links-placeholder">
+          </div>
+          <script>
+          $(function(){
+            $("#links-placeholder").load("../../assets/php/links.html");
+          });
+          </script>
+      
+</body>
+
+<div id="footer-placeholder">
+</div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("../../assets/php/footer.html");
+});
+</script>
+
+</html>
