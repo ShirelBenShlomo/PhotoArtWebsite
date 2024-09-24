@@ -9,4 +9,4 @@ A responsive website for a photography business. Built with HTML, CSS, PHP and J
 
 # link
 
-[a link](photoartisrael.com)
+[photoartisrael.com](photoartisrael.com)
